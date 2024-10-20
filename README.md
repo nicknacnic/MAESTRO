@@ -6,6 +6,8 @@ PIANO stands for Proactive Infoblox Assessments for NIOS Operations, and is targ
 MAESTRO is a toolset used to enhance PIANO's purview.
 
 ## Usage
+> [!WARNING]
+> PIANO is required to run on each individual NIOS GM DB backup, so if you are a multi-grid customer, 'orphaned' licenses may be on another grid...
 
 ### Installation:
 Pull the repo.
