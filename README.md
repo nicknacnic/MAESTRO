@@ -50,6 +50,10 @@ Output:
 A total count of orphan licenses is displayed in the terminal.
 The CSV file (orphans.csv) contains all the detailed information for each orphan license.
 
+## To-Do
+- [ ] Multi-grid support
+- [ ] Compare known local applied licenses to object counts for utilization determination
+
 ### Notes:
 > [!CAUTION]
 > Requires python3 and beautifulsoup4 (e.g. brew install python3 && pip install bs4
