@@ -14,7 +14,7 @@ Pull the repo.
 ```git clone https://github.com/nicknacnic/MAESTRO.git```
 
 Run the script.
-```python maestro.py PIANO.html``` or ```python maestro.py PIANO.html > out.txt```
+```python orphans.py PIANO.html``` or ```python orphans.py PIANO.html > out.txt```
 
 > [!TIP]
 > Use -v for verbose mode. It will output Grid and SFDC licenses in the GUI. You can then pipe the output to a text file.
