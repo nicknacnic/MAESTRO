@@ -20,37 +20,15 @@ Run the script.
 > Use -v for verbose mode. It will output Grid and SFDC licenses in the GUI. You can then pipe the output to a text file.
 
 ### How It Works:
-This script analyzes HTML table header data:
+This script analyzes HTML data:
 
-License Extraction:
-
-The script parses an HTML file to extract Salesforce licenses (identified by their LicenseKey values) using regex.
-It also extracts locally applied database licenses from an HTML table in the same file using BeautifulSoup.
-License Comparison:
-
-The extracted Salesforce licenses are compared to the locally applied database licenses to find "orphan licenses" (licenses that exist in Salesforce but are not present locally).
-Orphan Data Extraction:
-
-Once orphan licenses are identified, the script extracts additional details (e.g., SerialNumber, ActivationID, LicenseTechnology, etc.) by locating the corresponding HTML elements.
-CSV Generation:
-
-The script writes all orphan license details into a CSV file named orphans.csv with the following fields:
-LicenseKey
-SerialNumber
-Name
-ActivationID
-LicenseTechnology
-ParentSKU
-SoftwareSKU
-MaintenanceType
-MaintenanceEndDate
-Description
-Output:
-
-A total count of orphan licenses is displayed in the terminal.
-The CSV file (orphans.csv) contains all the detailed information for each orphan license.
+orphans.py identifies licenses in SFDC that aren't applied on grid
+dedupe.py turns that csv into a model count
+refresh.py identifies total on-grid members / licenses
 
 ## To-Do
+- [ ] add logic for all SKUs to scripts
+- [ ] daybreak.py to auto-write model changes to the dealsheets
 - [ ] Multi-grid support, licenses and object counts
 - [ ] Compare known local applied licenses to object counts for utilization determination, more best-practice checks
 - [ ] (Offline / private) UDDI tokens output
