@@ -51,8 +51,9 @@ A total count of orphan licenses is displayed in the terminal.
 The CSV file (orphans.csv) contains all the detailed information for each orphan license.
 
 ## To-Do
-- [ ] Multi-grid support
-- [ ] Compare known local applied licenses to object counts for utilization determination
+- [ ] Multi-grid support, licenses and object counts
+- [ ] Compare known local applied licenses to object counts for utilization determination, more best-practice checks
+- [ ] (Offline / private) UDDI tokens output
 
 ### Notes:
 > [!CAUTION]
