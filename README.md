@@ -54,6 +54,7 @@ The CSV file (orphans.csv) contains all the detailed information for each orphan
 - [ ] Multi-grid support, licenses and object counts
 - [ ] Compare known local applied licenses to object counts for utilization determination, more best-practice checks
 - [ ] (Offline / private) UDDI tokens output
+- [ ] Refresh X6 output 😎
 
 ### Notes:
 > [!CAUTION]
