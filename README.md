@@ -1,0 +1,54 @@
+# MAESTRO 🎹
+PIANO is a tool used internally by Infoblox SAs to ascertain health of a grid deployment.  
+
+PIANO stands for Proactive Infoblox Assessments for NIOS Operations, and is targeted towards grid reviews as opposed to the cloud-managed or deployed Infoblox products. 
+
+MAESTRO is a toolset used to enhance PIANO's purview.
+
+## Usage
+
+### Installation:
+Pull the repo.
+```git clone https://github.com/nicknacnic/MAESTRO.git```
+
+Run the script.
+```python maestro.py PIANO.html``` or ```python maestro.py PIANO.html > out.txt```
+
+> [!TIP]
+> Use -v for verbose mode. It will output Grid and SFDC licenses in the GUI. You can then pipe the output to a text file.
+
+### How It Works:
+This script analyzes HTML table header data:
+
+License Extraction:
+
+The script parses an HTML file to extract Salesforce licenses (identified by their LicenseKey values) using regex.
+It also extracts locally applied database licenses from an HTML table in the same file using BeautifulSoup.
+License Comparison:
+
+The extracted Salesforce licenses are compared to the locally applied database licenses to find "orphan licenses" (licenses that exist in Salesforce but are not present locally).
+Orphan Data Extraction:
+
+Once orphan licenses are identified, the script extracts additional details (e.g., SerialNumber, ActivationID, LicenseTechnology, etc.) by locating the corresponding HTML elements.
+CSV Generation:
+
+The script writes all orphan license details into a CSV file named orphans.csv with the following fields:
+LicenseKey
+SerialNumber
+Name
+ActivationID
+LicenseTechnology
+ParentSKU
+SoftwareSKU
+MaintenanceType
+MaintenanceEndDate
+Description
+Output:
+
+A total count of orphan licenses is displayed in the terminal.
+The CSV file (orphans.csv) contains all the detailed information for each orphan license.
+
+### Notes:
+> [!CAUTION]
+> Requires python3 and beautifulsoup4 (e.g. brew install python3 && pip install bs4
+
