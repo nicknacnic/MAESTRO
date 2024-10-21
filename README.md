@@ -26,6 +26,8 @@ This script analyzes HTML data:
 - dedupe.py turns orphans.csv into deduped_orphans_output.csv for a model count + a la carte sub count
 - refresh.py identifies total on-grid members / licenses
 
+Use refresh script output plus orphaned deduped output to understand everything in scope for refresh. Automation coming soon!
+
 ## To-Do
 - [ ] add logic for all SKUs to scripts
 - [ ] daybreak.py to auto-write model changes to the dealsheets
