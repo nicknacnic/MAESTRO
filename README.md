@@ -11,13 +11,21 @@ MAESTRO is a toolset used to enhance PIANO's purview.
 
 ### Installation:
 Pull the repo.
-```git clone https://github.com/nicknacnic/MAESTRO.git```
+```
+git clone https://github.com/nicknacnic/MAESTRO.git
+```
 
 Run the script.
-```python orphans.py PIANO.html``` or ```python orphans.py PIANO.html > out.txt```
+```
+python orphans.py PIANO.html
+```
+or 
+```
+python orphans.py PIANO.html > out.txt
+```
 
 > [!TIP]
-> Use -v for verbose mode. It will output Grid and SFDC licenses in the GUI. You can then pipe the output to a text file.
+> Use -v for verbose mode. It will output Grid and SFDC licenses in the GUI. You can then pipe the output to a text file like above.
 
 ### How It Works:
 This script analyzes HTML data:
