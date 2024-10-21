@@ -23,16 +23,16 @@ Run the script.
 This script analyzes HTML data:
 
 - orphans.py identifies licenses in SFDC that aren't applied on grid
-- dedupe.py turns that csv into a model count
+- dedupe.py turns orphans.csv into deduped_orphans_output.csv for a model count + a la carte sub count
 - refresh.py identifies total on-grid members / licenses
 
 ## To-Do
 - [ ] add logic for all SKUs to scripts
 - [ ] daybreak.py to auto-write model changes to the dealsheets
-- [ ] Multi-grid support, licenses and object counts
+- [ ] Multi-grid support: licenses and object counts
 - [ ] Compare known local applied licenses to object counts for utilization determination, more best-practice checks
-- [ ] (Offline / private) UDDI tokens output
-- [ ] Refresh X6 output 😎
+- [ ] UDDI tokens output
+- [ ] Unified .sh to parse PIANO to create assessment / recommendation
 
 ### Notes:
 > [!CAUTION]
