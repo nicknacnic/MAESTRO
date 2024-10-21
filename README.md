@@ -22,9 +22,9 @@ Run the script.
 ### How It Works:
 This script analyzes HTML data:
 
-orphans.py identifies licenses in SFDC that aren't applied on grid
-dedupe.py turns that csv into a model count
-refresh.py identifies total on-grid members / licenses
+- orphans.py identifies licenses in SFDC that aren't applied on grid
+- dedupe.py turns that csv into a model count
+- refresh.py identifies total on-grid members / licenses
 
 ## To-Do
 - [ ] add logic for all SKUs to scripts
